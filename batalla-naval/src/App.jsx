@@ -13,7 +13,6 @@ function App() {
             Batalla Naval
           </Typography>
           <Tablero/>
-          
       </Box>
   )
 }
