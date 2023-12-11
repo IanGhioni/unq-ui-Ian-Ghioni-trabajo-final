@@ -6,10 +6,10 @@ import BarcoContainer from './components/Barco/BarcoContainer'
 function App() {
 
   return (
-      <Box>
+      <Box className="appContainer">
         <Typography 
           className='titulo'
-          variant='h4'>
+          variant='h3'>
             Batalla Naval
         </Typography>
         <Tablero/>
