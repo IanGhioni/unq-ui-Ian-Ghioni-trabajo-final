@@ -1,5 +1,5 @@
 import './App.css'
-import { Typography, Box } from '@mui/material'
+import { Typography, Box, Container } from '@mui/material'
 import Tablero from './components/Tablero/Tablero'
 import "./components/Barco/barco.css"
 import BarcoContainer from './components/Barco/BarcoContainer'
@@ -12,7 +12,10 @@ function App() {
           variant='h3'>
             Batalla Naval
         </Typography>
-        <Tablero/>
+        <Box sx={{display:'flex', flexDirection: 'row', alignItems: 'center'}}>
+          <Tablero user="machine"/>
+          <Tablero user="machine"/>
+        </Box>
         <BarcoContainer/>
       </Box>
   )

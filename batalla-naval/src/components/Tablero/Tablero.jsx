@@ -1,15 +1,16 @@
 import { Box, Container } from "@mui/material"
 import "./tablero.css"
 import Casilla from "../Casilla/Casilla"
+import { useEffect } from "react"
 
-function Tablero() {
-    const array = Array.from(Array(100).keys())
+function Tablero(user) {
+    const arrayOfNumbers = Array.from(Array(100).keys())
+    const casillas = arrayOfNumbers.map((i) => (<Casilla key={i}/>))
 
+    
     return(
             <Box className="tableroContainer">
-                {array.map((i) => (
-                    <Casilla key={i}/>
-                ))}
+                {casillas}
             </Box>
     )
 }
