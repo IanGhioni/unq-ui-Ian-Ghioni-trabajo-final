@@ -14,6 +14,8 @@ function App() {
         </Typography>
         <Tablero/>
         <BarcoContainer/>
+          </Typography>
+          <Tablero/>
       </Box>
   )
 }
