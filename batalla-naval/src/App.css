@@ -1,6 +1,7 @@
 .titulo {
   padding-top: 1%;
   color: azure;
+  font-variant-caps: small-caps;
 }
 .appContainer {
   display: flex;
