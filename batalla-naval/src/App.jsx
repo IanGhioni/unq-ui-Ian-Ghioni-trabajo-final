@@ -1,8 +1,8 @@
-import { useState } from 'react'
 import './App.css'
-import { Container, Typography, Box } from '@mui/material'
+import { Typography, Box } from '@mui/material'
 import Tablero from './components/Tablero/Tablero'
-
+import "./components/Barco/barco.css"
+import BarcoContainer from './components/Barco/BarcoContainer'
 function App() {
 
   return (
@@ -11,9 +11,9 @@ function App() {
           className='titulo'
           variant='h4'>
             Batalla Naval
-          </Typography>
-          <Tablero/>
-          
+        </Typography>
+        <Tablero/>
+        <BarcoContainer/>
       </Box>
   )
 }

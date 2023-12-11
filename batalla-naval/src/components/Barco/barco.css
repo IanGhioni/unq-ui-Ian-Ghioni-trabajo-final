@@ -1,0 +1,46 @@
+.lancha {
+    background-color: azure;
+    width: 80px;
+    height: 40px;
+    border-radius: 50%;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+}
+.submarino {
+    background-color: azure;
+    width: 120px;
+    height: 40px;
+    border-radius: 50%;
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 20%;
+}
+.crucero {
+    background-color: azure;
+    width: 160px;
+    height: 40px;
+    border-radius: 50%;
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 20%;
+}
+.portaviones {
+    background-color: azure;
+    width: 200px;
+    height: 40px;
+    border-radius: 50%;
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
+}
+.barcoContainer {
+    margin: 1%;
+    background-color: rgb(83, 161, 164);
+    height: 215px;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 2cap;
+}
+.rotateButton {
+    background-color: aliceblue;
+    color: black;
+}
