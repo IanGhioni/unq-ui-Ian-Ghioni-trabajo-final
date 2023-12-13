@@ -1,4 +1,4 @@
-.tableroContainer {
+.tableroBox {
     margin: 2cap;
     background-color: rgb(10, 149, 255);
     width: 400px;
@@ -7,5 +7,5 @@
     border-color: white;
     display: flex;
     flex-flow: wrap;
-    flex-direction: column;
+    flex-direction: row;
 }

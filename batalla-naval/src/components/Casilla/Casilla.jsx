@@ -1,11 +1,22 @@
-import { Box, Container } from "@mui/material"
+import { Box } from '@mui/material'
 import './casilla.css'
+import { useState } from 'react'
 
-function Casilla() {
+function Casilla({taken}, {machine}) {
+    const [cssName, setCssName] = useState('casilla')
+    const [disabled, setDisabled] = useState(false)
+
+    function handleClick() {
+        if(cssName == 'casilla') {
+            setCssName(taken ? 'casillaOcupada' : 'casillaVacia')
+            setDisabled(true)
+        }
+    }
+
     return(
-        <Box className='casilla'>
-            
-        </Box>
+        <div style={disabled ? {pointerEvents: "none"} : {}}>
+            <Box className={cssName} onClick={handleClick}></Box>
+        </div>
     )
 }
 
