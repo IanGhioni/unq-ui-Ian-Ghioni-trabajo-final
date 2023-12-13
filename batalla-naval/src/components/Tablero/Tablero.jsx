@@ -1,4 +1,4 @@
-import { Box, Container } from "@mui/material"
+import { Box, Button, Container } from "@mui/material"
 import "./tablero.css"
 import Casilla from "../Casilla/Casilla"
 import casillasOcupadas from "./casillasOcupadas"
@@ -21,12 +21,17 @@ function Tablero({isMachine}) {
         ))
 
     } else {
-        casillas = arrayOfNumbers.map((i) => (<Casilla key={i} taken={false}/>))
+        casillas = arrayOfNumbers.map((i) => (<Casilla key={i} taken={false} machine={isMachine}/>))
     }
 
     return(
-            <Box className="tableroContainer">
-                {casillas}
+            isMachine ? <Box className="tableroBox"> {casillas} </Box> 
+            :
+            <Box sx={{display:'flex', flexDirection: 'row', alignItems: 'center'}}>
+                <Box className="tableroBox"> 
+                    {casillas} 
+                </Box>
+                <Button sx={{alignSelf: "flex-end"}}>Jugar</Button>
             </Box>
     )
 }
