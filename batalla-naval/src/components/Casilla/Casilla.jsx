@@ -1,11 +1,11 @@
-import { Box, Container } from "@mui/material"
+import { Box } from '@mui/material'
 import './casilla.css'
 
-function Casilla() {
+function Casilla({taken}) {
+    const cssName = taken ? 'casillaOcupada' : 'casilla'
     return(
-        <Box className='casilla'>
-            
-        </Box>
+        <div className={cssName}></div>
+        
     )
 }
 

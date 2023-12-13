@@ -13,7 +13,6 @@ function App() {
             Batalla Naval
         </Typography>
         <Box sx={{display:'flex', flexDirection: 'row', alignItems: 'center'}}>
-          <Tablero isMachine={false}/>
           <Tablero isMachine={true}/>
         </Box>
         <BarcoContainer/>

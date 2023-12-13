@@ -7,5 +7,5 @@
     border-color: white;
     display: flex;
     flex-flow: wrap;
-    flex-direction: column;
+    flex-direction: row;
 }
