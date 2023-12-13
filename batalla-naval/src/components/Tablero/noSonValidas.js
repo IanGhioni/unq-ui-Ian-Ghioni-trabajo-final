@@ -19,7 +19,6 @@ function noSonValidas(casillasOcupadas, size, indice, horizontal) {
     }
 
     let returnValue = casillasOcupadas.length != 0  && hayCasillasRepetidas || sobrepasaElBordeDerecho
-    console.log(sobrepasaElBordeDerecho); console.log(size); console.log(returnValue)
     return(returnValue)
 }
 export default noSonValidas
