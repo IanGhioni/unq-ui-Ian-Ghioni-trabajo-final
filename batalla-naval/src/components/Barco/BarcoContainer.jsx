@@ -18,7 +18,7 @@ function BarcoContainer() {
     }, [rotate])
 
     return(
-        <Box>
+        <Box sx={{display:'flex', flexDirection:'column' ,alignItems: 'center'}}>
             <Button onClick={rotar}> Rotar barcos</Button>
             <Box sx={{height:height}} className="barcoContainer">
                 <Lancha rotation={rotateDeg}/>
