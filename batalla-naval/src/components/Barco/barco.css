@@ -1,0 +1,30 @@
+.lancha {
+    background-color: azure;
+    width: 80px;
+    height: 40px;
+}
+.submarino {
+    background-color: azure;
+    width: 120px;
+    height: 40px;
+}
+.crucero {
+    background-color: azure;
+    width: 160px;
+    height: 40px;
+}
+.portaviones {
+    background-color: azure;
+    width: 200px;
+    height: 40px;
+}
+.barcoContainer {
+    margin: 1%;
+    background-color: rgb(83, 161, 164);
+    height: 215px;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 2cap;
+}

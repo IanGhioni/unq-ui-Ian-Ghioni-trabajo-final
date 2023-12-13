@@ -1,34 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-
+import { Typography, Box, Container } from '@mui/material'
+import Tablero from './components/Tablero/Tablero'
+import "./components/Barco/barco.css"
+import BarcoContainer from './components/Barco/BarcoContainer'
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+      <Box className="appContainer">
+        <Typography 
+          className='titulo'
+          variant='h3'>
+            Batalla Naval
+        </Typography>
+        <Box sx={{display:'flex', flexDirection: 'row', alignItems: 'center'}}>
+          <Container sx={{display:'flex', flexDirection: 'row'}}>
+          <Tablero isMachine={false}/>
+          <Tablero isMachine={true}/>
+          </Container>
+        </Box>
+        <BarcoContainer/>
+      </Box>
   )
 }
 
