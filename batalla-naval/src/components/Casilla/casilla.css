@@ -9,11 +9,9 @@
 .casillaOcupada {
     width: 40px;
     height: 40px;
-    border: 0.1px solid;
-    border-color: white;
     box-sizing: border-box;
     cursor: pointer;
-    background-color: brown;
+    background-color: rgb(255, 6, 6);
 }
 
 .casillaVacia {
@@ -22,8 +20,7 @@
     border: 0.1px solid;
     border-color: white;
     box-sizing: border-box;
-    cursor: pointer;
-    background-color: rgb(163, 163, 163);
+    background-color: rgb(255, 255, 255);
 }
 
 .casilla:hover {
